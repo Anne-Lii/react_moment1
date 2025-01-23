@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Filmlista med React och Typescript
+Av Anne-Lii Hansen anha2324@student.miun.se
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Denna applikation är resultatet av moment 1 i kursen "Fördjupad Frontend utveckling".
+En enkel React-applikation som visar upp en lista med filmer. Koden är skriven i Typescript för typkontroll och den är komponentbaserad.
 
-Currently, two official plugins are available:
+## Funktionalitet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*  Visar en lista med filmer med deras titel, utgivningsår och om filmen har setts och en default bild.
+*  Filmlistan är hårdkodad i komponenten men kan enkelt utökas med dynamisk data.
 
-## Expanding the ESLint configuration
+## Projektstruktur
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **`Movie.tsx`**: En komponent som representerar en enskild film.
+* **`MovieList.tsx`**: En komponent som hanterar och visar listan med filmer.
+* **`Header.tsx`**: En komponent med header elementet.
+* **`Footer.tsx`**: En komponent med footer elementet.
 
-- Configure the top-level `parserOptions` property like this:
+Till varje fil finns en CSS stilmall med samma namn med .css endelsen där den komponentspecifika CSS stylingen finns.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tech 🛠️
+
+* **React**: För att bygga komponenter och hantera UI.
+* **TypeScript**: För typkontroll och robust utveckling.
+* **CSS**: För styling av applikationen.
+
+## Installation och körning
+
+1. Klona projketet:
+
+```bash
+git clone https://github.com/Anne-Lii/react_moment1.git
 ```
+2. Navigera till projektet:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+cd react-m1
+```
+3. Installera beroenden:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+npm install
+```
+4. Starta servern:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm start
 ```
