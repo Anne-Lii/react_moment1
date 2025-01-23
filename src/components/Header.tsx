@@ -1,4 +1,5 @@
 import './Header.css'
+import movieImage from './assets/cinema.png';
 
 const Header = (props : {title: string}) => {
   return (
@@ -7,7 +8,7 @@ const Header = (props : {title: string}) => {
         <h1>{props.title}</h1> 
 
         {/* Bild av Donald Tong: https://www.pexels.com/sv-se/foto/109669/ */}
-        <img src="src/assets/cinema.jpg" alt="bio" />            
+        <img src={movieImage} alt="bio" />            
     </header>       
   )
 }
