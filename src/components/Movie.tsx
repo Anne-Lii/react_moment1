@@ -1,5 +1,6 @@
 import React from 'react';
 import './Movie.css' //Importerar komponentspecifik css
+import movieImage from '../assets/movie.png';
 
 //Definierar ett gränssnitt för komponentens props
 interface MovieProps {
@@ -17,7 +18,7 @@ const Movie: React.FC<MovieProps> = ({ title, year, seen }) => {
         <p>Sett: {seen ? "Ja" : "Nej "}</p> {/* Har filmen setts eller ej */}
 
         {/* Standardbild. här kan url för bild läggas in eller statiska bilder */}
-        <img className='default_picture' src="src/assets/movie.png" alt="" />
+        <img className='default_picture' src={movieImage} alt="movieroll" />
         {/* Bild av <a href="https://pixabay.com/sv/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=147631">OpenClipart-Vectors</a> från <a href="https://pixabay.com/sv//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=147631">Pixabay</a> */}
          
       </div>
