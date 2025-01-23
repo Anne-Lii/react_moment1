@@ -1,0 +1,18 @@
+.main_content {
+    text-align: center;
+   
+}
+
+h2 {
+    color: red;
+    padding: 20px 0;
+    
+}
+
+.movie_content {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    gap: 10px;
+}
