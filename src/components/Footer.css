@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(218, 18, 18);
+    background-color: rgb(184, 3, 3);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -7,4 +7,8 @@ footer {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
+}
+
+.footer_p {
+    padding: 30px;
 }
