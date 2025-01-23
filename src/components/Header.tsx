@@ -1,5 +1,5 @@
 import './Header.css'
-import movieImage from './src/assets/cinema.png';
+import movieImage from './src/assets/cinema.jpg';
 
 const Header = (props : {title: string}) => {
   return (
