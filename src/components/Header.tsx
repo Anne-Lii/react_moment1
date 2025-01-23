@@ -7,8 +7,7 @@ const Header = (props : {title: string}) => {
         <h1>{props.title}</h1> 
 
         {/* Bild av Donald Tong: https://www.pexels.com/sv-se/foto/109669/ */}
-        <img src="src/assets/cinema.jpg" alt="bio" />
-      
+        <img src="src/assets/cinema.jpg" alt="bio" />      
         
     </header>     
   
